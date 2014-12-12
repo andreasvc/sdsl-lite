@@ -8,7 +8,7 @@ file(GLOB libFiles RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}  "${CMAKE_CURRENT_SOURCE
 
 set( sdsl_SRCS ${libFiles} )
 
-add_library( sdsl ${sdsl_SRCS} )
+add_library( sdsl SHARED ${sdsl_SRCS} )
 
 install(TARGETS sdsl
 		RUNTIME DESTINATION bin
